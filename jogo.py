@@ -6,7 +6,7 @@ PALAVRAS = [
     "TROCA", "FLOCO", "GRADE", "GRUTA", "LUNAR",
     "MANTO", "NOBRE", "OCASO", "PRATA", "QUOTA",
     "RAIVA", "SABRE", "TARDE", "ULTRA", "VAPOR",
-    "XADREZ", "ZETOU", "ABRIR", "BURRO", "CHUVA",
+    "XEROX", "ZUMBI", "ABRIR", "BURRO", "CHUVA",
 ]
 
 TENTATIVAS_MAX = 6
@@ -17,9 +17,9 @@ def comparar(secreta, tentativa):
 
     Retorna uma lista de strings no formato 'LETRA[C]', 'LETRA[P]' ou 'LETRA[X]'.
 
-    [C] – A letra esta na palavra e na posicao correta.
-    [P] – A letra esta na palavra, mas em posicao errada.
-    [X] – A letra nao existe na palavra secreta.
+    [C] – A letra está na palavra e na posição correta.
+    [P] – A letra está na palavra, mas em posição errada.
+    [X] – A letra não existe na palavra secreta.
     """
     resultado = []
     secreta_lista = list(secreta)
@@ -56,8 +56,8 @@ def jogar():
     print("  Bem-vindo a A Palavra Secreta da Caverna!")
     print("=" * 40)
     print(f"A palavra secreta tem {tamanho} letras.")
-    print(f"Voce tem {TENTATIVAS_MAX} tentativas.\n")
-    print("Indicadores: [C] posicao correta | [P] letra existe, posicao errada | [X] letra nao existe\n")
+    print(f"Você tem {TENTATIVAS_MAX} tentativas.\n")
+    print("Indicadores: [C] posição correta | [P] letra existe, posição errada | [X] letra não existe\n")
 
     for tentativa_num in range(1, TENTATIVAS_MAX + 1):
         while True:
@@ -72,7 +72,7 @@ def jogar():
         print()
 
         if entrada == palavra_secreta:
-            print(f"Parabens! Voce acertou a palavra secreta: {palavra_secreta}")
+            print(f"Parabéns! Você acertou a palavra secreta: {palavra_secreta}")
             return
 
     print(f"Fim de jogo! A palavra secreta era: {palavra_secreta}")
